@@ -1,0 +1,14 @@
+/* Ley de Ampère */
+.expl{position:relative;border:1px solid var(--line);border-radius:12px;background:var(--bg2);overflow:hidden;touch-action:none}
+.expl canvas{display:block;width:100%;height:440px}
+@media (max-width:640px){.expl canvas{height:340px}}
+.res3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:640px){.res3{grid-template-columns:minmax(0,1fr)}}
+.res3 .v{font:600 20px/1.2 var(--f-mono);color:var(--gold);font-variant-numeric:tabular-nums}
+.stage text{font-family:var(--f-mono);fill:var(--fg2);font-size:11px}
+.stage text.lb{font-family:var(--f-body);font-weight:600;fill:var(--fg);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{all:unset;cursor:pointer;padding:6px 10px;border-radius:8px;border:1px solid var(--line2);font:600 13px/1 var(--f-mono);color:var(--fg2)}
+.chips button[aria-pressed="true"]{background:var(--gold);color:var(--onacc);border-color:var(--gold)}
+.chips button:focus-visible{outline:2px solid var(--gold)}
+.chips button.done{border-color:var(--acc);color:var(--acc)}
